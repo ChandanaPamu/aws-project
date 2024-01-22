@@ -1,0 +1,19 @@
+{
+  "version": "36.0.0",
+  "files": {
+    "26d3513dfee4c07361a60fa9273c75b31bd1f222779aa51ae5d823f3d5ae65a3": {
+      "source": {
+        "path": "gefyraS3Stack.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "26d3513dfee4c07361a60fa9273c75b31bd1f222779aa51ae5d823f3d5ae65a3.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}
